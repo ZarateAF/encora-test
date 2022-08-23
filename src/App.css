@@ -11,7 +11,9 @@ h1{
   display: flex;
   flex-wrap: wrap;
 }
-
+.search{
+  margin-bottom: 50px;
+}
 .card{
   width: 190px;
   height: 254px;
@@ -37,19 +39,6 @@ h1{
   .card{
     width: 100%;
   }
-}
-
-.navbar{
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
-.home{
-  position: absolute;
-  left: 10px;
-  cursor: pointer;
-  font-size: 24px;
 }
 .loader{
   display: flex;

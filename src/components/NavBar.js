@@ -1,8 +1,12 @@
+import style from "./navbar.module.css";
+
 export const NavBar = ({ title, onClick }) => {
   return (
-    <div className="navbar">
-      <div className="home" onClick={() => onClick("react")}>HOME</div>
-      <h1>{title}</h1>
+    <div className={style.navbar}>
+      <div className={style.home} onClick={() => onClick("")}>
+        HOME
+      </div>
+      <h1>{title ? title : "Github"}</h1>
     </div>
   );
 };

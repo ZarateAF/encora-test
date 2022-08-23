@@ -1,0 +1,11 @@
+.home {
+  position: absolute;
+  left: 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}

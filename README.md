@@ -1,4 +1,6 @@
 
+This is a Github Topic application built in ReactJs and GraphQL . The application uses the API from Github which is available at [https://github.com/](https://github.com/) The main link we will use to fetch our JSON data is [https://api.github.com/graphql](https://api.github.com/graphql) and we will fetch our data using ApolloClient.
+
 ## Configuration
 First you need to add your token from github in the file `.env` and run the next script
 

@@ -1,6 +1,7 @@
 import { useQuery } from "@apollo/client";
 import { Card, NavBar } from "../components";
 import { TOPIC_QUERY } from "../queries";
+import { Searcher } from "./Searcher";
 
 const Topics = ({ topic = "", onClick }) => {
   const { data, error, loading } = useQuery(TOPIC_QUERY, {
@@ -14,9 +15,10 @@ const Topics = ({ topic = "", onClick }) => {
   return (
     <div>
       <div className="container">
-        <NavBar title={data.topic.name} onClick={onClick}/>
+        <NavBar title={data?.topic?.name} onClick={onClick} />
+        <Searcher onClick={onClick}/>
         <div className="topics">
-          {data.topic.relatedTopics.map((t) => (
+          {data?.topic?.relatedTopics.map((t) => (
             <Card
               key={t.name}
               name={t.name}

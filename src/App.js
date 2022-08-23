@@ -4,7 +4,7 @@ import { apolloClient } from "./config";
 import Topics from "./container/Topics";
 
 function App() {
-  const [topic, setTopic] = useState("react");
+  const [topic, setTopic] = useState("");
   const handleClick = (info) => {
     setTopic(info);
   };
